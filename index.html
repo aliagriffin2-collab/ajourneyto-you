@@ -1,184 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Power of Writing — Essay</title>
-  <meta name="description" content="A clean, responsive single-file website that displays an essay and includes print and share features.">
-  <style>
-    :root{
-      --bg:#fefaf5;
-      --card:#ffffff;
-      --text:#1a1a1a;
-      --muted:#5a5a5a;
-      --accent1:#FF6B6B;   /* red */
-      --accent2:#4ECDC4;   /* teal */
-      --accent3:#FFD93D;   /* yellow */
-      --accent4:#6A5ACD;   /* purple */
-      --accent5:#FF9F1C;   /* orange */
-    }
-    [data-theme="dark"]{
-      --bg:#0e0f1d;
-      --card:#1a1c2c;
-      --text:#f3f3f3;
-      --muted:#b8b8b8;
-      --accent1:#ff8787;
-      --accent2:#63e6be;
-      --accent3:#ffe066;
-      --accent4:#b197fc;
-      --accent5:#ffb85c;
-    }
-
-    *{box-sizing:border-box}
-    body{
-      margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;
-      background:var(--bg);color:var(--text);line-height:1.65;
-      background-image:linear-gradient(135deg,var(--accent1)10%,var(--accent2)25%,var(--accent3)40%,var(--accent4)60%,var(--accent5)80%);
-      background-size:300% 300%; animation:gradient 18s ease infinite;
-    }
-
-    @keyframes gradient{
-      0%{background-position:0% 50%;}
-      50%{background-position:100% 50%;}
-      100%{background-position:0% 50%;}
-    }
-
-    .container{max-width:950px;margin:40px auto;padding:24px}
-
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-    .brand{display:flex;gap:16px;align-items:center}
-    .logo{
-      width:60px;height:60px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent4),var(--accent1));
-      display:flex;align-items:center;justify-content:center;
-      color:#fff;font-weight:800;font-size:1.5rem;
-      box-shadow:0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    h1{font-size:1.9rem;margin:0;font-weight:800;color:var(--card);text-shadow:1px 2px 6px rgba(0,0,0,0.35)}
-    .meta{color:var(--card);font-size:1rem;text-shadow:1px 1px 5px rgba(0,0,0,0.4)}
-
-    .card{
-      background:var(--card);
-      border-radius:20px;
-      padding:32px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.12);
-      border-left:12px solid var(--accent2);
-      backdrop-filter:blur(6px);
-    }
-
-    article p{margin:1em 0;font-size:1.05rem}
-    h2,h3{color:var(--accent4);font-weight:800;text-shadow:0 1px 3px rgba(0,0,0,0.15)}
-
-    button, .btn{
-      background:var(--accent3);
-      border:none;
-      color:#000;
-      padding:10px 14px;
-      border-radius:10px;
-      cursor:pointer;
-      font-weight:600;
-      box-shadow:0 4px 10px rgba(0,0,0,0.15);
-      transition:0.2s;
-    }
-    button:hover{transform:scale(1.05);background:var(--accent2)}
-
-    footer{margin-top:22px;color:var(--muted);font-size:0.9rem;text-align:center}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Journey to You</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container" id="page">
-    <header>
-      <div class="brand">
-        <div class="logo">E</div>
-        <div>
-          <h1>The Power of Writing</h1>
-          <div class="meta">By: A. Writer — <time datetime="2025-12-11">December 11, 2025</time></div>
-        </div>
-      </div>
-      <div class="toolbar">
-        <div class="share" aria-hidden>
-          <button id="printBtn" title="Print this essay" class="btn">Print</button>
-          <button id="downloadBtn" title="Download as .txt" class="btn">Download</button>
-        </div>
-        <div>
-          <button id="themeToggle" aria-pressed="false" title="Toggle theme" class="btn">Toggle theme</button>
-        </div>
-      </div>
-    </header>
+<header>
+<h1>A Journey to You</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="ethnic-studies.html">What Is Ethnic Studies?</a>
+<a href="identity.html">Identity</a>
+<a href="stories.html">Storytelling</a>
+<a href="cultures.html">Cultural Groups</a>
+<a href="educators.html">Educators</a>
+</nav>
+</header>
 
-    <main class="card" role="main">
-      <article>
-        <h2>A Journey to You: An Ethnic Studies Intervention for Global Youth</h2>
-        <p>Ethnic Studies has traditionally been introduced to students at the college level, often as an elective rather than a foundational area of learning. As a result, many young people grow up without structured opportunities to learn about identity, culture, and the histories of marginalized communities. This gap is particularly harmful because racial awareness, self-concept, and social understanding begin developing in childhood. If students are not exposed to diverse narratives early on, they may internalize narrow or incomplete worldviews. <em>A Journey to You</em>, my Ethnic Studies intervention, responds to this need. Designed as a free, globally accessible website for children of all ages, the platform provides interactive ethnic studies resources that center identity, storytelling, and cultural understanding. It incorporates my background in coding while addressing a significant educational gap in early multicultural learning.</p>
 
-        <p>The central challenge my intervention addresses is the widespread lack of Ethnic Studies resources designed for children outside of formal academic environments. While Ethnic Studies has grown over the decades—fueled by social movements, community activism, and the push for representation—its visibility remains limited. K–12 access varies drastically depending on state policy, district priorities, and political debate. In many places, Ethnic Studies courses do not appear until high school, if at all. College-level programs, although important, serve students who have already formed much of their racial and cultural understanding long before stepping onto a campus.</p>
+<section class="hero">
+<h2>Welcome to A Journey to You</h2>
+<p>A free, child‑friendly global Ethnic Studies platform celebrating identity, culture, and community.</p>
+</section>
 
-        <p>This lack of early-access resources is meaningful and concerning. Research shows that children begin recognizing racial differences as early as age three. By elementary school, they are already forming assumptions about race, belonging, and capability. Without tools that encourage critical thinking, cultural pride, and historical understanding, young learners may internalize stereotypes or feel disconnected from their heritage. The problem is even more pronounced for multiracial, immigrant, or marginalized youth who rarely see themselves represented in textbooks or children’s media.</p>
 
-        <p>Moreover, Ethnic Studies is too often framed as a political battleground rather than an educational necessity. This has placed many schools in positions where they cannot or choose not to adopt the Ethnic Studies curriculum. For young people outside the United States, especially in countries without multicultural education frameworks, these resources are even more limited. <em>A Journey to You</em> aims to provide a solution that bypasses political gatekeeping, geographic limitations, and economic barriers. It ensures that children, families, and educators worldwide can access Ethnic Studies content without needing approval from institutions or access to higher education.</p>
+<section>
+<h3>Our Mission</h3>
+<p>To bring early Ethnic Studies learning to children around the world—promoting pride, empathy, and cultural knowledge.</p>
+</section>
 
-        <p><em>A Journey to You</em> is a web-based Ethnic Studies platform built to be free, accessible, and child-friendly. Through this project, I combine my experience in coding with my interest in cultural identity, representation, and social justice. The website functions as an open educational resource that anyone with internet access can use.</p>
 
-        <p>The core features of the platform include interactive lessons, storytelling circles, creative activities, and curriculum guides for educators. These resources introduce children to topics such as identity, cultural traditions, migration stories, Indigenous histories, and anti-racism in developmentally appropriate ways. Because children learn best through creativity and connection, the website includes art activities, journal prompts, and guided self-reflection. These support both personal expression and cultural exploration.</p>
-
-        <p>The storytelling section of the website highlights diverse narratives from communities around the world. Children are able to listen to, watch, or read stories from people whose experiences reflect a wide range of cultural identities, languages, and traditions. Representation is a central part of this intervention because seeing oneself reflected in educational materials fosters confidence and belonging. At the same time, children learn about cultures other than their own, which promotes curiosity and empathy.</p>
-
-        <p>Another important aspect of the project is accessibility. Many online platforms for children are filled with advertisements or require subscriptions. <em>A Journey to You</em> is intentionally free, non-commercial, and safe for young learners. This ensures that children from different socioeconomic backgrounds can equally benefit from the material without financial barriers. The format also allows for global reach, supporting learners in homes, classrooms, community spaces, and places where Ethnic Studies curriculum is not formally offered.</p>
-
-        <p>Several major themes shape the project. First, identity exploration encourages children to reflect on themselves and the communities they come from. Cultural pride and visibility affirm students who may not see themselves in traditional curricula. The project also emphasizes early, inclusive education by showing that Ethnic Studies is not only for older students. Anti-bias awareness and critical thinking are woven into the lessons in ways that are gentle and accessible for young minds. Finally, global interconnectedness emphasizes that culture and identity exist across borders and are part of a shared human experience.</p>
-
-        <p>Through <em>A Journey to You</em>, I aim to accomplish several goals. The first is to normalize early Ethnic Studies learning by integrating these concepts into childhood education. This helps build a foundation of respect, understanding, and cultural awareness. The second goal is to empower marginalized and multiracial youth who often struggle with visibility and identity validation in traditional classrooms. By offering positive representation and self-reflective tools, the project supports strong, healthy identity development.</p>
-
-        <p>Another goal is to provide free, high-quality resources that families and educators can use anywhere in the world. The project also hopes to spark meaningful conversations in homes and classrooms about culture, fairness, and belonging. If children learn these concepts early, they are more likely to grow into adults who value justice, empathy, and diversity. Finally, the project bridges technology and social education by demonstrating how coding and digital design can serve community needs and promote equity.</p>
-
-        <p>In conclusion, <em>A Journey to You</em> represents a new, accessible, and globally minded approach to Ethnic Studies. By creating a child-friendly website that blends interactive learning with cultural storytelling, this intervention addresses the longstanding lack of resources available to young learners. It acknowledges that identity development begins early and that every child deserves to feel seen, valued, and connected to their heritage. Through this project, I hope to offer a meaningful, empowering, and inclusive learning experience that supports children in understanding themselves and the world around them. Ultimately, <em>A Journey to You</em> seeks to reshape how future generations engage with culture, identity, and community, beginning with their own journey inward.</p>
-
-        <h3>Citations / Notes for Future Drafts</h3>
-        <p><strong>What is Ethnic Studies?</strong><br>
-        "Ethnic" means relating to large groups of people classified by common racial, national, tribal, religious, linguistic, or cultural origin. — Merriam-Webster. Ethnic Studies is an academic discipline that uses this framework to examine the social, cultural, historical, and political experiences of various ethnic and racial groups, often focusing on marginalized communities to understand identity, power, and inequality.</p>
-
-        <p><strong>Core groups of Ethnic Studies:</strong> African Americans, Asian Americans, Native Americans, and Latina/o/x Americans. These would be separate sections of the website detailing cultural histories and supporting deeper learning.</p>
-      </article>
-
-      <footer>
-        <p>Made with care — edit freely. Suggestions: deploy to GitHub Pages, Netlify, or Vercel for free hosting.</p>
-      </footer>
-    </main>
-  </div>
-
-  <script>
-    // Theme toggle
-    const themeToggle = document.getElementById('themeToggle');
-    const page = document.documentElement;
-    function setTheme(theme){
-      if(theme==='dark') page.setAttribute('data-theme','dark');
-      else page.removeAttribute('data-theme');
-      themeToggle.setAttribute('aria-pressed', theme==='dark');
-    }
-    // Respect user preference
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(prefersDark ? 'dark' : 'light');
-    themeToggle.addEventListener('click', ()=>{
-      const isDark = page.getAttribute('data-theme')==='dark';
-      setTheme(isDark ? 'light' : 'dark');
-    });
-
-    // Print button
-    document.getElementById('printBtn').addEventListener('click', ()=>window.print());
-
-    // Download essay as .txt
-    document.getElementById('downloadBtn').addEventListener('click', ()=>{
-      const title = document.querySelector('h1').innerText.replace(/[^a-z0-9]/gi,'_');
-      const author = document.querySelector('.meta').innerText;
-      const paragraphs = Array.from(document.querySelectorAll('article > p, article > h2, article > h3, article > li'))
-        .map(el => el.innerText).join('\n\n');
-      const blob = new Blob([title + '\n' + author + '\n\n' + paragraphs], {type:'text/plain'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = (title||'essay') + '.txt';
-      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-    });
-  </script>
+<footer>© 2025 A Journey to You</footer>
 </body>
 </html>
